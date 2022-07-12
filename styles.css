@@ -10,6 +10,26 @@
 html{
   font-size: 80%;  
 }
+.hamburger-menu{
+    width: 3rem;
+    height: 3rem;
+
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.line{
+    width: 100%;
+    height: 0.2rem;
+    background-color: white;
+    box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2) ;
+}
 .header{
     width: 100%;
     height: 100%;
@@ -30,7 +50,8 @@ html{
 .banner{
     position: absolute;
     font-size: 150%;
-    top: 35%;
+    top: 33%;
+    
     left: 3%;
 }
 
@@ -39,4 +60,32 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 font-size: 7rem;
 font-weight: 300;
 color:blanchedalmond;
+line-height: 9rem;
+letter-spacing: 0.2rem;
+text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+}
+.banner p{
+  font-family: "josefin Slab", serif;
+  font-size: 2.5rem;
+  color:ivory; 
+  width: 70%;
+  letter-spacing: 0.1rem;
+  
+  text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.4) ;
+}
+.banner button{
+width: 10rem;
+height: 4rem;
+top: 5%;
+background-color: yellow;
+left: 10%;
+border: none;
+font-family:serif;
+font-size: 1.5rem;
+font-weight: 300;
+text-transform: uppercase;
+color: black;
+text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+cursor: pointer;
 }
