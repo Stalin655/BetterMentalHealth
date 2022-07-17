@@ -91,7 +91,7 @@ text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
 width: 10rem;
 height: 4rem;
 top: 5%;
-background-color: yellow;
+background-color: burlywood;
 left: 10%;
 border: none;
 font-family:serif;
@@ -122,8 +122,12 @@ width: 25rem;
 height: 100vh;
 position: fixed;
 top: 0;
-right: 0;
+right: -25rem;
 background-color:burlywood;
+transition: right 0.5s;
+}
+.change.sidebar{
+    right: 0;
 }
 
 .menu {
@@ -133,12 +137,32 @@ background-color:burlywood;
     transform: translate(-50%,-50%);
 }
 .menu-item {
- text-align:left;}
+ text-align:left;
+line-height: 3em;}
 .menu-link{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.5rem;
     color: black;
+    position: relative;
 }
+.menu-link::before{
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:blue;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+    ease-in-out;
+
+
+}
+.menu-link.menu-link:hover::before{
+    width: 100%;
+}
+
 .social-media{
     position: absolute;
     top: 30rem;
@@ -153,8 +177,14 @@ background-color:burlywood;
     margin: 3rem;
     width: 3rem;
     height: 4.5rem;
-    color:crimson;
+    color:blue;
     display:flex;
     justify-content: center;
-    align-items:center ;
+    align-items:center;
+    transition: background-color 0.3s;
+}
+
+.social-media i:hover {
+    background-color: red;
+
 }
