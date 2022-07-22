@@ -13,7 +13,7 @@ html{
 .hamburger-menu{
     width: 3rem;
     height: 3rem;
-
+    
     position:fixed;
     top: 5rem;
     right: 5rem;
@@ -148,6 +148,7 @@ top: 0;
 right: -25rem;
 background-color:burlywood;
 transition: right 0.5s;
+z-index: 100;
 }
 .change.sidebar{
     right: 0;
@@ -161,7 +162,9 @@ transition: right 0.5s;
 }
 .menu-item {
  text-align:left;
-line-height: 3em;}
+line-height: 3em;
+}
+
 .menu-link{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.5rem;
@@ -177,15 +180,15 @@ line-height: 3em;}
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: width 0.3s;
+    transition: width 0.3s ease-in-out;
 
     
 }
-.menu-link.menu-link:hover::before{
+.menu-link:hover::before{
     width: 100%;
 }
 
-.social-media{
+.social-media {
     position: absolute;
     top: 30rem;
     bottom: 0rem;
