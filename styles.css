@@ -26,10 +26,10 @@ html{
 
 }
 .change .hamburger-menu {
-right: 23rem;
+right: 20rem;
 }
 .line{
-    width: 100%;
+    width: 80%;
     height: 0.3rem;
     background-color: white;
     box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2) ;
@@ -150,7 +150,7 @@ background-color:burlywood;
 transition: right 0.5s;
 z-index: 100;
 }
-.change.sidebar{
+.change .sidebar{
     right: 0;
 }
 
@@ -163,6 +163,8 @@ z-index: 100;
 .menu-item {
  text-align:left;
 line-height: 3em;
+font-weight: bold;
+line-break: auto;
 }
 
 .menu-link{
