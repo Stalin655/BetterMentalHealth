@@ -251,3 +251,26 @@ line-break: auto;
     background-color: red;
 
 }
+
+.about-us{
+    width: 100%;
+    background-color: burlywood;
+    padding-bottom: 8rem;
+
+}
+
+.section-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+.section-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 4rem;
+
+}
