@@ -306,6 +306,27 @@ line-break: auto;
     color: maroon;
 
 }
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 5rem 20rem 5rem;
+}
+.cards-wrapper {
+    display: flex;
+   justify-content: space-evenly;
+   margin-top: 8rem;
+   width:100%;
+}
+
+.card {
+    width: 37rem;
+    height: 45rem;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.4);
+    border-radius: 0.5rem;
+    position: relative;
+}
 
 .service-text {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
