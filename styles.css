@@ -706,7 +706,7 @@ line-break: auto;
    html {
     font-size: 45%;
    }
-}
+
 
 .sidebar {
   width: 100%;
@@ -714,5 +714,14 @@ line-break: auto;
 }
 
 .change .hamburger-menu {
-  right: ;
+  right: 38rem;
+}
+.service {
+  width: 30rem;
+}
+
+.footer {
+  height: 18rem;
+}
+
 }
