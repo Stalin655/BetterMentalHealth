@@ -581,3 +581,138 @@ line-break: auto;
   color: aliceblue;
   font-size: 1rem;
 }
+@media (max-width: 1500px) {
+  .card {
+    width: 28rem;
+  }
+  .contact-wrapper {
+    width: 60%;
+    height: 35rem;
+  }
+  .footer-content{
+    width: 70%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .banner h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .banner p {
+    font-size: 3rem;
+  }
+  .banner button {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.6rem; 
+  }
+  .menu-link {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .team {
+    padding-bottom: 3rem;
+  }
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .card{
+    margin-bottom: 6rem;
+  }
+  .contact-wrapper {
+    width: 70%;
+    height: 35rem;
+  }
+  .contact-heading {
+    margin-bottom: 2rem;
+  }
+  .field {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  .banner p {
+    font-size: 2.5rem;
+  }
+  .banner button {
+    width: 18rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .contact-left {
+    width: 0;
+  }
+  .contact-right {
+    width: 100%;
+  }
+  .field {
+    width: 55rem;
+  }
+
+  .input-group textarea {
+    max-width: 55rem;
+  }
+  .submit-btn {
+    width: 45rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .copyright {
+    order: 1;
+    margin-top: 3rem;
+
+  }
+}
+
+@media (max-width: 700px) {
+  .banner h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .banner p {
+    font-size: 2rem; 
+  }
+
+  .field {
+    width: 35rem;
+  }
+
+  .input-group textarea {
+    max-width: 35rem;
+  }
+
+
+  .submit-btn {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 500px) {
+   html {
+    font-size: 45%;
+   }
+}
+
+.sidebar {
+  width: 100%;
+  right: -100%;
+}
+
+.change .hamburger-menu {
+  right: ;
+}
