@@ -240,7 +240,7 @@ line-break: auto;
     margin: 3rem;
     width: 3rem;
     height: 4.5rem;
-    color:blue;
+    color:bisque;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -557,6 +557,27 @@ line-break: auto;
     color: bisque;
   }
 
-.social-list {
-  
+.social-list a {
+  margin: 0.6rem;
+
+}
+
+.social-list i {
+  font-size: 2.5rem;
+  color: bisque;
+}
+.scroll-btn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 4rem;
+  bottom: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color:darkorange;
+  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+  color: aliceblue;
+  font-size: 1rem;
 }
