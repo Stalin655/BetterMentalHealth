@@ -21,13 +21,45 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  z-index: 300;
+}
+
+.display .spinner-container {
+  opacity: 0;
+  visibility: hidden;
+
 }
 
 .circles {
   width: 6rem;
   height: 5.5rem; 
   position: relative;
-  
+  opacity: 0;
+  visibility: hidden;
+  animation: displaycircles 1s;
+}
+@keyframes displaycircles {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  25% {
+    opacity:1;
+    visibility:  visible;
+  }
+
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
 }
 
 .circles div {
@@ -112,6 +144,10 @@ html{
 
 .container {
   display: none;
+}
+
+.display .container {
+  display: block;
 }
 
 
