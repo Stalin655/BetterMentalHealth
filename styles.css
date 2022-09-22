@@ -7,8 +7,10 @@
     text-decoration: none;
 }
 
-html{
-  font-size: 80%;  
+html, body{
+  font-size: 1rem; 
+  height: 100vh;
+  width: 100%; 
 }
 
 .spinner-container {
@@ -229,26 +231,33 @@ right: 20rem;
 
 }
 
-
-.header{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    perspective: 100rem ;
+/*header styles*/
+header{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /**/
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
     
 }
-.img-wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    overflow:hidden;
-
+header .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
 }
-.img-wrapper img{
-    width: 100%;
+header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    overflow: hidden; /**/
     height: 100%;
     object-fit: cover;
-    opacity: 0.5; 
     animation-name: scale;
     animation-duration: 25s;
 }
@@ -261,15 +270,13 @@ right: 20rem;
         transform: scale(1);
     }
 }
-.banner{
-    position: absolute;
-    font-size: 150%;
-    top: 33%;
-    
-    left: 3%;
+.content{
+  position: relative;
+  font-size: 150%;
+  z-index: 5;
 }
 
-.banner h1{
+.content h1{
 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 font-size: 7rem;
 font-weight: 300;
@@ -279,20 +286,19 @@ letter-spacing: 0.2rem;
 text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
 
 }
-.banner p{
+.content p{
   font-family: "josefin Slab", serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color:ivory; 
-  width: 70%;
-  letter-spacing: 0.1rem;
+  width: 80%;
+  line-height: 1.4;
  
 }
-.banner button{
-width: 10rem;
-height: 4rem;
-top: 5%;
+.content button{
+width: 200px;
+height: 50px;
+margin-top: 2rem;
 background-color: burlywood;
-left: 10%;
 border: none;
 font-family:serif;
 font-size: 1.5rem;
@@ -318,70 +324,55 @@ animation: moveBanner 1s 0.9s;
 
 }
 
-.sidebar {
-width: 25rem;
-height: 100vh;
-position: fixed;
-top: 0;
-right: -25rem;
-background-color:teal;
-transition: right 0.5s;
-z-index: 100;
+aside {
+  width: 25rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -25rem;
+  background-color:rgb(13, 21, 37);
+  transition: right 0.5s;
+  z-index: 100;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .change .sidebar{
-    right: 0;
+  right: 0;
 }
 
-.menu {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.menu-item {
- text-align:left;
-line-height: 3em;
-font-weight: bold;
-line-break: auto;
+.menu-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu-link{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5rem;
-    color: black;
-    position: relative;
+.menu-links a{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.2rem;
+  color: #fff;
+  position: relative;
+  margin-bottom: 1.5rem;
+  transition: all .4s ease-in-out;
 }
-.menu-link::before{
-    content: attr(data-content);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color:darkorange;
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: width 0.3s ease-in-out;
 
-    
+.menu-links a:hover{
+  color:darkorange;
+  transition: all .4s ease-in-out;
 }
-.menu-link:hover::before{
-    width: 100%;
-}
+
 
 .social-media {
-    position: absolute;
-    top: 30rem;
-    bottom: 0rem;
-    width: 100%;
-    display: flex;
-    justify-content:end;
+  position: relative;
+  display: flex;
 
 }
-.social-media i {
-    font-size: 2.2rem;
-    margin: 3rem;
+.social-media .icon {
+    margin: 3rem 1rem;
     width: 3rem;
-    height: 4.5rem;
+    height: 3rem;
     color:bisque;
     display:flex;
     justify-content: center;
@@ -389,9 +380,13 @@ line-break: auto;
     transition: background-color 0.3s;
 }
 
-.social-media i:hover {
+.social-media .icon:hover {
     background-color: red;
 
+}
+
+.social-media .icon i{
+    font-size: 1.5rem;
 }
 
 .about-us{
@@ -680,10 +675,10 @@ line-break: auto;
   
   .footer {
     width: 100%;
-    height: 8rem;
+    height: 10vh;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -693,9 +688,9 @@ line-break: auto;
     justify-content: space-between;
 
   }
-  .copyright  {
+  .footer-content p  {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: bisque;
   }
 
@@ -704,10 +699,13 @@ line-break: auto;
 
 }
 
-.social-list i {
-  font-size: 2.5rem;
+.social-list a > i{
+  font-size: 1.5rem;
   color: bisque;
+  margin: 0 2rem;
+  transition: all .3s;
 }
+
 .scroll-btn {
   position: fixed;
   display: flex;
