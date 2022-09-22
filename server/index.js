@@ -7,7 +7,10 @@ app.get('/mental', (req, res) => {
 } )
 
 //routes
-app.use('/api', router);
+app.use('/api/users', router);
+app.use('/api/admin', router);
+app.use('/api/therapist', router);
+
 
 
 app.listen(4000, () => {
