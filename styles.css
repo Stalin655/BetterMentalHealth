@@ -306,6 +306,7 @@ animation: moveBanner 1s 0.9s;
 
 }
 
+
 @keyframes moveBanner{
     0%{
         transform: translateY(40rem) rotate(-20deg);
