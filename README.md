@@ -1,2 +1,4 @@
-# Workspace
-A web-based online therapy platform.
+# Better Mental Health PLatform
+```A web-based online therapy platform.```
+
+
