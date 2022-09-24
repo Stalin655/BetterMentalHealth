@@ -13,7 +13,7 @@ html, body{
   width: 100%; 
 }
 
-.container {
+.container{
   height: 100vh;
   width: 100%;
   display: flex;
@@ -21,4 +21,69 @@ html, body{
   justify-content: center;
   background-color: rgb(238, 83, 11);
 
+}
+
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: ivory;
+}
+
+header{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 28px;
+font-weight: 600;
+color: black;
+text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+form .field{
+    position: relative;
+    height: 50px;
+    width: 100%; 
+    margin-top: 20px;  
+}
+.field input, .field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    padding: 0 15px;
+    border: 1px solid #835a5a;
+
+}
+.eye-icon{
+   font-size: 18px;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   cursor:pointer;
+   color: black;
+   position: absolute;
+   padding: 5px; 
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+    }
+.form-link span, .form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: blue;  
+}
+.form a {
+    color: rgb(60, 2, 71);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form a:hover{
+    text-decoration: underline;
 }
