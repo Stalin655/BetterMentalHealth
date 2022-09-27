@@ -81,11 +81,15 @@ body{
 }
 
 .input-field i.icon {
+    position:absolute;
     left: 0;
 
 }
-.input-field i.showHidePw{
+.showHidePw{
     right: 0;
+    cursor: pointer;
+    padding:10px;
+
 }
 .checkbox-text{
     display: flex;
