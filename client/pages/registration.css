@@ -7,102 +7,18 @@
     text-decoration: none;
 }
 
-html, body{
+body{
   font-size: 1rem; 
   height: 100vh;
-  width: 100%; 
-}
-
-.container{
-  height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(238, 83, 11);
-  column-gap: 40px;
-
-
+  background-color: darkorange;
+  
 }
-
-.form{
+.container{
+    position: relative;
     max-width: 430px;
     width: 100%;
-    height: 80vh;
-    padding: 30px;
-    border-radius: 6px;
-    background-color: ivory;
-    
+    background: ivory ;
 }
-
-header{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 28px;
-font-weight: 600;
-color: black;
-text-align: center;
-}
-form{
-    margin-top: 30px;
-}
-form .field{
-    position: relative;
-    height: 50px;
-    width: 100%; 
-    margin-top: 20px;  
-}
-.field input, .field button{
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 6px;
-}
-.field input{
-    outline: none;
-    padding: 0 15px;
-    border: 1px solid #835a5a;
-
-}
-.field input:focus{
-    border-bottom-width:2px;
-}
-.eye-icon{
-   font-size: 18px;
-   top: 50%;
-   right: 10px;
-   transform: translateY(-50%);
-   cursor:pointer;
-   color: black;
-   position: absolute;
-   padding: 5px; 
-}
-.field button{
-    color: antiquewhite;
-    background-color: blue;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.field button:hover{
-    background-color: purple;
-}
-.form-link{
-    text-align: center;
-    margin-top: 10px;
-    }
-.form-link span, .form-link a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: blue;  
-}
-.form a {
-    color: rgb(26, 153, 9);
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.form-content a:hover{
-    text-decoration: underline;
-}
- 
